@@ -1,0 +1,598 @@
+
+    :root {
+        --text-banner-color: #fff;
+        --text-color: #333;
+        --icon-lighter:rgb(124, 121, 121);
+        --text-lighter:rgb(98, 97, 97);
+        --icon-color: rgb(6, 179, 247);
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height: 1.6rem;
+        font-size: 19px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    b {
+        font-size: 15px;
+    }
+    
+    .bg-grey {
+        background: #f7f7f7;
+    }
+    
+    section > .container{
+        /* width: 1170px; */
+        margin: auto;
+        display: block;
+        position: relative;
+        padding: 30px 50px;
+    }
+    
+
+    /* banner image */
+    #banner {
+        padding:0px !important;
+    }
+    
+    #banner .banner_image{
+        width: 100%;
+        height: 380px;
+        position: relative;
+        filter: brightness(60%);
+    }
+    
+    #banner .banner_infor_developer {
+        position: absolute;
+        top:10%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: var(--text-banner-color);
+        text-align: center;
+        line-height: 1.8rem;
+    }
+    
+    .banner_infor_developer > h1 {
+        font-size: 28px;
+    }
+    
+    .banner_infor_developer > span {
+        font-size: 14px;
+        color: rgb(218, 215, 211);
+    }
+    
+    /* navbar section */
+    #nav-bar {
+        text-align: center;
+    }
+    
+    .fas {
+        color:#199cdb;
+    }
+    #nav-bar .container {
+        margin-top: 0px;
+        display: flex;
+        padding: 0px;
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #nav-bar > .container > a {
+        display: flex;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+        color: var(--text-color);
+        text-decoration: none;
+        border-left: 1px solid rgb(226, 226, 226);
+    }
+    
+    #nav-bar > .container >a:last-child {
+        border-right: 1px solid rgb(226, 226, 226);
+    }
+    
+    /* get the new width for the second tag a */
+    #nav-bar > .container >a:nth-child(2) {
+        width: 450px;
+        justify-content: start;
+    }
+    
+    #nav-bar > .container > a .dev_name{
+       font-size: 22px;
+       font-weight: 500;
+    }
+    
+    #nav-bar > .container > a .dev_position {
+        font-size: 14px;
+    }
+    
+    .nav_item_dev_name {
+        width: 250px;
+    }
+    
+    /* about container */
+    #about > .container{
+        /* remove old padding and just keep the padding left */
+        padding: 0px 0px 0 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    
+    .container > #personal-info {
+        background-color: rgb(239, 239, 239);
+    }
+    /* css for text in dev-information */
+    
+    #personal-info ul {
+        list-style: none;
+    }
+    
+    .bold_dev_infor {
+        font-weight: bold;
+    
+    }
+    
+    .icon_color{
+        color: rgb(34, 149, 202);
+        font-size: 15px;
+    }
+    
+    
+    #target > p, #personal-info > ul > li, #personal-info > ul > li >span {
+        font-size: 15px;
+    }
+    
+    #target > p, .icon_marggin {
+        padding: 0px 0px 30px 40px;
+    }
+    
+    .section-title {
+        font-size: 19px;
+        font-weight: bold;
+        padding: 50px 20px 30px 40px;
+    }
+    
+    /* Kinh nghiem, hoc van, hoat dong */
+
+    /* job-infor height to get same hight for each column*/
+    .div_col {
+        height: 850px;
+    }
+    
+    .div_col_1 {
+        height: 400px;
+    }
+    
+    /* inner grid for h1 and icon */
+    .job-info_border {
+        margin-top: 20px;
+        border: 1px solid #d1cece;
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 120px;
+    }
+    
+    .job-info_border > h1, .job_infor_icon {
+        padding: 50px 20px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    
+    .job_infor_icon {
+        font-size: 40px;
+        padding-top: 35px;
+        align-self: flex-end;
+        color: var(--icon-lighter);
+    }
+    
+    .circle_current_time {
+        padding: 1px 5px;
+        border-radius: 5px;
+        font-size: 15px;
+        color: var(--text-banner-color);
+        background-color: rgb(6, 179, 247);
+    }
+    
+    .job-info_ul > ul > li {
+        color: rgb(6, 179, 247);
+        padding: 0px 20px 20px 0px;
+    
+    }
+    
+    .job-info_ul {
+        grid-column: 1/ span 2;
+    }
+    
+    
+    .job-info_ul > ul > li > p {
+        color: #333;
+        font-size: 15px;
+        line-height: 1.4rem;
+    }
+    
+    .date_italic {
+        font-style: italic;
+        font-size: 15px;
+    }
+    
+    /* so thich container */
+    .sothich_container {
+        grid-column: 1/span 2;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px;
+        gap: 2px ;
+    }
+    /* css for circle icon */
+    .circle_icon {
+        width: 56px;
+        height: 56px;
+        padding-top: 17px;
+        border: 1px solid var(--icon-color);
+        text-align: center;
+        border-radius: 50%;
+        justify-self: center;
+        color: var(--icon-color);
+    }
+    
+    .sothich_container > p {
+        text-align: center;
+        color: var(--text-lighter);
+        margin-top: 10px;
+    }
+    
+    /* grid for part language */
+    .language_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        gap: 2px;
+        grid-template-rows: 30px 10px 30px 10px 30px 10px 30px 10px;
+        align-items: center;
+    }
+    
+    .language_grid > p {
+        grid-column: 1/span 3;
+        margin-left: 20px;
+        text-align:start;
+        margin-bottom: 0px;
+    }
+    
+    .language_grid > .span_level {
+        background-color: #199cdb;
+        display: inline-block;
+        height: 2px;
+        margin-left: 25px;
+        margin-bottom: 5px;
+        width: 40px;
+        align-self: center;
+        justify-self:center;
+    
+    }
+    
+    .language_grid > span {
+        background-color: #a9abac;
+        display: inline-block;
+        height: 2px;
+        width: 40px;
+        margin-left: 25px;
+        margin-bottom: 5px;
+        align-self: center;
+        justify-self:center;
+    
+    }
+    
+    /* certificate section */
+    #certificate > .container {
+        padding: 0 50px 10px 50px;
+    }
+    
+     .container > h1 {
+        padding-left: 0;
+    }
+    
+    .giaithuong_container {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .giaithuong_container > div:nth-child(2) {
+        border-left: 1px solid #d6c08d;
+        padding-left: 15px;   
+    }
+    
+    .giaithuong_container > div:nth-child(3) {
+        border-top: 1px solid #d6c08d;
+        padding-top: 30px;
+        grid-column: 1/span2;
+    }
+    
+    /* css for hinh anh certificate */
+    .giaithuong_va_hinh_anh > img{
+        width: 130px;
+        height: 90px;
+        margin-right: 15px;
+    }
+    
+    .giaithuong_va_hinh_anh {
+        width: 100%;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+    .giaithoung_info >p {
+        font-size: 15px;
+        line-height: 1rem;
+    }
+    
+    .giaithoung_info :first-child {
+        font-weight: bold;
+    }
+    
+    .certificate_gpa {
+        margin-top: -10px;
+    }
+    
+    /* Project section */
+    .single_project > div{
+        border: 1px solid #d8dada;
+    }
+    .single_project > div:nth-child(2), .single_project > div:nth-child(1) {
+        /* remove double border */
+        border-bottom: none;
+    }
+    
+    .project_cv {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 18px;
+    }
+    
+    .project_cv_infor {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 10px 18px;
+        flex-wrap: wrap;
+    }
+
+    .project_cv_infor > p{
+        margin-bottom: 0;
+    }
+    
+    .year_circle {
+        padding: 0px 10px;
+        color: var(--text-banner-color);
+        border-radius: 25px;
+        background-color: #3db1e6;
+    }
+    
+    .cv_icon {
+        margin: 0 5px 0 18px;
+    }
+    
+    .project_detail {
+        display: flex;
+    }
+    
+    .project_detail_p {
+        padding-right: 60px;
+    }
+    
+   
+    /* Css for table */
+    table { 
+        /* using this to draw border row */
+        border-collapse: collapse; 
+    }
+
+    .project_border {
+        height: 100%;
+        border: solid 1px #d8dada;
+    }
+
+    
+    .detail_border {
+        border-top: 1px solid #d8dada;
+    }
+
+    table tr:last-child {
+        height: 50px;
+        border-bottom: none;
+    }
+
+    table tr:first-child {
+        height: 140px;
+    }
+    .detail_border > td {
+        font-size: 15px;
+    }
+    
+    .td_detail_width {
+        padding-left: 10px;
+        width: 100px;
+    }
+    .td_align_top {
+        vertical-align:top;
+        padding-right: 5px;
+    }
+    
+    .td_height_third_project {
+        height: 110px;
+    }
+    .td_height {
+        height: 65px;
+    }
+    
+    /* footer */
+    .footer_container_icons {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+    
+    .footer_container_icons > li > a {
+        display: flex;
+        text-decoration: none;
+        font-size: 15px;
+        color: var(--text-lighter);
+        margin-left: 15px;
+        margin-right: 15px;
+        justify-content: center;
+    }
+    
+    .footer_container_icons > li > a > span {
+        font-size: 15px;
+        margin-left: 4px;
+    }
+    
+    .footer_icon {
+        font-size: 27px;
+        color: #199cdb;
+    }
+    
+    /* advance (add avata to navbar) */
+.digital_link {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .nav_avata {
+        position: absolute;
+        height: 140px;
+        width: 140px;
+        z-index: 1;
+        top:-45px;
+        left: 46%;    
+        border: 8px solid white;
+        border-radius: 50%;
+    }
+
+    /* digital-cv */
+
+    .custom_container {
+        margin: 40px auto;
+    }
+    /* title */
+    .section-title-digital {
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        padding: 20px 0px 10px 0px;
+        border-bottom: 1px solid #8c8f8f;
+    }
+
+    .border_bot {
+        border-bottom: 1px solid #cfd0d0;
+    }
+
+    .goal_detail_title {
+        font-size: 15px;
+        font-weight: bold;
+        /* margin-top: 20px; */
+    }
+
+    .change_title_mt {
+        margin-top: 5px;
+    }
+
+    .svg_icon {
+        height: 24px;
+        width: 24px;
+        margin: 20px 40px 40px 40px;
+    }
+
+    .goal_detail {
+        margin-bottom: 10px;
+    }
+
+    .goal_detail > p {
+        margin-bottom: 0px;
+        line-height: 1.2rem;
+    }
+
+    .container_border {
+        height: 100%;
+        border: 16px solid blue;
+        background-color: rgb(238, 248, 251);
+    }
+
+    /* team section */
+    .team_section > div:last-child {
+        padding-bottom: 50px;
+    }
+
+    .team_section {
+        border-left: 14px solid blue;
+    }
+
+    .team_icon {
+        height: 24px;
+        width: 24px;
+        margin: 10px 10px 10px 0px;
+    }
+/* Timeline section */
+.circle_date_icon {
+    padding-top: 4px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: var(--text-banner-color);
+    background-color: #bf8df0;
+}
+
+.border_bot_timeline {
+    border-bottom: 2px dotted #2cc1c1;
+    margin-bottom: 20px;
+}
+
+/* remove timeline border on left side */
+.timeline_border {
+    border-left: none;
+}
+
+/* scope section */
+.scope_section {
+    border-top: 14px solid blue;
+}
+
+.Scope_In_Out {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 0px 0;
+}
+
+.scope_detail > p {
+    line-height: 1.2rem;
+    margin-bottom: 10px;
+}
+/* primary section */
+.primary_section {
+    padding: 0px;
+}
+.primary_section {
+    border-top: 14px solid blue;
+    border-left: 14px solid blue;
+}
+
+.primary_icon {
+    height: 100px;
+    width: 100px;
+    margin: -30px 10px 10px 0px;
+}

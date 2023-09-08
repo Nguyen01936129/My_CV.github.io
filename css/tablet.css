@@ -1,0 +1,118 @@
+/* on tablet */
+@media screen and (max-width: 990px) {
+
+    /* navbar section */
+    .nav_avata {
+        display: none;
+    }
+
+    .nav_item_tablet {
+        width: 600px;
+        font-size: 16px;
+    }
+    #nav-bar > .container >a:nth-child(2) {
+        width: 600px;
+    }
+
+    /* job-infor section */
+    .custom_div_col_height_tablet {
+        height: 510px;
+        /* height: 100%; */
+    }
+
+    /* giải thưởng và hình ảnh */
+    .giaithuong_va_hinh_anh {
+        display: block;
+    }
+
+    .giaithuong_va_hinh_anh > img{
+        width: 280px;
+        height: 125px;
+    }
+
+    /* project section */
+    section > .container {
+        padding: 30px 20px;
+    }
+
+    /* add padding for cv ca nhan to get equal hight to */
+    .project_cv_tablet {
+        padding: 25px 18px;
+        height: 82px;
+    }
+
+    table { 
+        /* using this to draw border row */
+        border-collapse: collapse; 
+        height: auto;
+    }
+
+    table tr:first-child {
+        height: 265px;
+    }
+
+    .td_align_top {
+        /* height: 225px; */
+    }
+
+
+    /* add margin for icon in CV project */
+    .cv_icon_ml {
+        margin-left: 70px;
+    }
+
+    /* digittal-cv */
+.container_border {
+    border: 20px solid blue;
+    border-bottom: none;
+}
+
+.custom_container {
+    margin: 30px;
+}
+/* Goals section */
+.sm_icon_position {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 30px auto;
+    margin-bottom: 5px;
+}
+
+.md_icon_position_team {
+    display: block;
+    text-align: center;
+    margin: 30px auto 5px;
+}
+
+.goal_detail_title {
+    margin-top: 5px;
+}
+
+/* team section */
+.team_section {
+    border-top: 20px solid blue;
+    border-left: none;
+}
+
+/* scope section */
+.scope_section {
+    border-top: 20px solid blue;
+}
+
+/* primary section */
+.primary_section {
+    border:none;
+    border-top: 20px solid blue;
+}
+
+/* Timeline section */
+.timeline_border{
+    border-bottom: 20px solid blue;
+}
+
+.circle_date_icon_position {
+    margin-bottom: -8px;
+}
+
+}
