@@ -1,1 +1,1 @@
-# My_CV.github.io
+This is a small project which I made using : HTML, CSS, Bootstrap
