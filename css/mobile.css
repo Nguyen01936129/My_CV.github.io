@@ -41,6 +41,11 @@
         padding-left: 0px;
     }
 
+    /* remove padding left of media link for mobile */
+    .icon_marggin {
+        padding-left: 0;
+    }
+    
     /* job-infor section */
 
     /* margin for each column in section job-infor */
